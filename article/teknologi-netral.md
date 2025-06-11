@@ -1,0 +1,18 @@
+_Udah pernah dengerkan katanya ada suatu teknologi yang 'disalahgunakan'?_
+_Hmm.. yang bener..?_
+_Emangnya tujuan awal diciptakan teknologi tersebut tuh buat apa?_
+_Apakah buat kebaikan? buat keburukan? ato malah NETRAL?_
+_Klo tujuan awal diciptakan teknologi tersebut yang buat kebaikan ato keburukan kan udah jelas peruntukannya..._
+_Lantas klo yang NETRAL gimana tuh?_
+_Bukankah dengan membuat teknologi tersebut menjadi NETRAL berarti mengaminkan untuk digunakan oleh semua kubu? Oleh kebaikan maupun keburukan?_
+
+
+Jika kita melihat realita para pengembang teknologi saat ini, kita akan menyaksikan kumpulan makhluk yang bergumul dalam satu tempat tertutup yang hanya berkutat dengan hal-hal teknisnya saja. Para pengembang ini seolah berada didalam dimensi yang berbeda dari kehidupan masyarakat yang kelak akan menjadi pengguna dari teknologi yang mereka kembangkan. Sehingga para pengembang teknologi ini tidak benar-benar menemui apa yang dibutuhkan para (calon) penggunanya.
+
+Para pengembang teknologi ini hanya menerima data yang diberikan kepada mereka. Data yang diterima oleh para pengembang teknologi inipun hanya dalam wujud angka, grafik maupun bentuk-bentuk matematis maupun teknis lainnya. Para pengembang teknologi ini sedikit menerima data-data yang manusiawi. Sehingga menyebabkan teknologi hasil kembangan mereka sekedar menjadi hal teknis yang diklaim 'memudahkan pekerjaan manusia'. Entah teknologi tersebut 'memudahkan' dalam hal kebaikan maupun keburukan. Tidak jarang pula kita mendengar istilah pedang bermata ganda untuk teknologi-teknologi yang telah dikembangkan. Maka dari itulah hasil teknologi tersebut dapat disebut teknologi yang value-nya NETRAL
+
+Kemudian ketika teknologi yang telah dikembangkan tersebut digunakan untuk kejahatan, pengembangnya mengatakan hal tersebut merupakan 'penyalahgunaan'. Padahal memang pengembangnya sendirilah yang tidak memasukkan value positif kedalam teknologi yang ia kembangkan. Jika sudah begitu, bukankah memang sebaiknya ketika suatu teknologi dikembangkan sudah secara sengaja untuk diberi value positif. Setidaknya dengan memberi value positif pada teknologi yang dikembangkan tersebut dapat semakin jelas peruntukannya. Ya.. Walaupun tidak ada jaminan teknologi kembangan tersebut sepenuhnya akan digunakan untuk kebikan Karena memang tak ada makhluk yang mutlak di dunia ini.
+
+Kemudian yang menjadi pertanyaan, "Bagaimana caranya memasukkan value positif kedalam teknologi yang kita kembangkan?"
+
+Sebenarnya untuk memasukkan value positif cukup simpel namun memang tidak selalu mudah. Untuk memasukkan value positif kedalam teknologi kembangan kita ialah dengan memahami terlebih dahulu alasan untuk membuatnya. Alasan pengembangan teknologi ini haruslah dari suatu permasalahan yang benar-benar nyata, bukan suatu yang diada-adakan. Semakin dalam kita memahami permasalahan tersebut, maka semakin dalam value positif yang dapat kita sematkan kedalam teknologi kembangan tersebut. Ketika saya menyebut 'memahami' itu artinya yang kita gunakan ialah komponen-komponen jiwa kita, komponen akal hanya sebagai komplementer saja untuk semakin memasukkannya kedalam komponen-komponen jiwa. Jika merasa merasa pemahaman akan permasalahan tersebut dirasa sudah cukup barulah kita mulai mengembangkan teknologi yang kita tujukan untuk penyelesaian dari masalah tersebut. Ketika mengerjakan pengembangan tersebutpun value tersebut haruslah tetap dijaga dalam jiwa kita, agar setiap gerakan yang kita lakukan semakin memperdalam value yang kita masukkan. Dengan begitu teknologi yang kita kembangkan tersebut akan dapat mengandung value yang sama pula dengan value yang kita miliki.

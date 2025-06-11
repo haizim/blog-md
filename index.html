@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haizim's Blog</title>
+    <script src="/assets/js/alpine.min.js" defer></script>
+    <script src="/assets/js/tailwind.min.js"></script>
+    <script src="/assets/js/showdown.min.js"></script>
+    <style>
+        /* Custom styles for a more Medium-like feel */
+        body {
+            font-family: 'Georgia', serif; /* Use a serif font for classic look */
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .article-title {
+            font-family: 'Helvetica Neue', 'Arial', sans-serif; /* Sans-serif for titles */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Helvetica Neue', 'Arial', sans-serif; /* Sans-serif for headings */
+            font-weight: bold !important;
+        }
+        /* Custom styling for paragraph spacing */
+        .prose p {
+            margin-bottom: 1.5em; /* Add space between paragraphs */
+            text-align: justify;
+        }
+        /* Custom styling for links within the content */
+        .prose a {
+            color: #2563eb; /* Blue-600 */
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        .prose a:hover {
+            color: #1d4ed8; /* Blue-700 */
+        }
+        /* Custom styling for blockquotes */
+        .prose blockquote {
+            border-left: 4px solid #d1d5db; /* Gray-300 */
+            padding-left: 1.5em;
+            margin-left: 0;
+            font-style: italic;
+            color: #4b5563; /* Gray-600 */
+        }
+        /* Custom styling for lists */
+        .prose ul, .prose ol {
+            margin-bottom: 1.5em;
+            padding-left: 1.5em;
+        }
+        .prose ul li {
+            list-style-type: disc;
+        }
+        .prose ol li {
+            list-style-type: decimal;
+        }
+
+        code {
+            display: block;
+            background-color: #f8f8f8;
+            padding: 1em;
+            border-radius: .75em;
+            border: 1px solid #c9cacc;
+            overflow-x: scroll;
+            margin: 1em 0;
+        }
+
+        p code {
+            display: inline;
+            background-color: #f8f8f8;
+            border-radius: 0;
+            border: 1px solid #c9cacc;
+            /* border: none; */
+            padding: 0 .5em;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+
+        th, td {
+            padding: .5em;
+            border: 1px solid #c9cacc;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 leading-relaxed">
+    
+    <header class="border-b border-gray-200 py-6 mb-8">
+        <div class="container mx-auto max-w-3xl px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-800 tracking-tight">My Blog</h1>
+        </div>
+    </header>
+    
+    <main x-data="blog_view()">
+        <!-- Category Filter -->
+        <div class="container mx-auto mt-8 px-2 max-w-3xl">
+            <div class="flex justify-between items-center mb-4">
+                <a href="#" class="`inline-flex items-center text-gray-600 hover:text-gray-900 text-lg ${category_selected == '' ? 'font-bold' : ''}`" @click.prevent="filter_blog('')">
+                    <span>Semua</span>
+                </a>
+                <template x-for="category in categories" :key="category">
+                    <a href="#" :class="`inline-flex items-center text-gray-600 hover:text-gray-900 text-lg ${category === category_selected ? 'font-bold' : ''}`" @click.prevent="filter_blog(category)">
+                        <span x-text="category"></span>
+                    </a>
+                </template>
+            </div>
+        </div>
+
+        <!-- Article List -->
+        <div class="container mx-auto mt-8 px-2 max-w-3xl">
+            <div class="space-y-12"> 
+                <template x-for="blog in blogs_show" :key="blog.slug">
+                    <section class="group p-4">
+                        <p class="text-sm text-gray-600 mb-1">
+                            <span x-text="blog.category"></span> &bull; <span x-text="(new Date(blog.timestamp)).toDateString()"></span>
+                        </p>
+                        <h2 class="article-title text-3xl font-extrabold text-gray-900 mb-3 leading-tight">
+                            <a :href="`?slug=${blog.slug}`" class="transition duration-200" x-text="blog.title" @click.prevent="open_article(blog.slug)"></a>
+                        </h2>
+                        <p class="text-lg text-gray-700 mb-4" x-html="converter.makeHtml(blog.excerpt)"></p>
+                        <a :href="`?slug=${blog.slug}`" class="text-lg" @click.prevent="open_article(blog.slug)">Baca Selengkapnya</a>
+                    </section>
+                </template>
+            </div>
+        </div>
+
+        <!-- Article Modal -->
+        <div id="article-modal" class="w-screen h-screen bg-white top-0 fixed z-50 overflow-y-scroll" :style="'transition: all 1s ease-in-out; ' + (show_blog ? 'left: 0' : 'left: -100vw')">
+            <div id="article-top"></div>
+            <div class="container mx-auto mt-8 px-4 max-w-3xl">
+                <div class="mb-8">
+                    <a href="#" class="inline-flex items-center text-gray-600 hover:text-gray-900 text-lg" @click.prevent="close_article()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        Kembali
+                    </a>
+                </div>
+
+                <article class="prose lg:prose-xl">
+                    <p class="text-sm text-gray-600 mb-2">
+                        <span x-text="article.category"></span> &bull; <span x-text="(new Date(article.timestamp)).toDateString()"></span>
+                    </p>
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight" x-text="article.title" id="article-title">
+                    </h1>
+    
+                    <div x-html="article.content"></div>
+                </article>
+
+                <div class="mb-8 text-center">
+                    <a href="#" class="inline-flex items-center text-gray-600 hover:text-gray-900 text-lg" @click.prevent="close_article()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        Kembali
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-gray-600 text-sm py-12 mt-16 border-t border-gray-200">
+        <div class="container mx-auto max-w-2xl px-4 text-center">
+            <p>&copy; 2025 Haizim's Blog</p>
+        </div>
+    </footer>
+    
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
