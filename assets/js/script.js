@@ -47,6 +47,37 @@ function blog_view() {
                 ]
             });
 
+            // document.addEventListener("deviceready", function() {
+            //     document.addEventListener("backbutton", function(e) { e.preventDefault(); alert('back'); this.close_article();}, false);
+            // }, false);
+
+            // document.addEventListener("backbutton", function(e) { e.preventDefault(); alert('back'); this.close_article();}, false);
+
+            // Fallback for direct back button event (without deviceready)
+            document.addEventListener("backbutton", function(e) { 
+                e.preventDefault(); 
+                if (self.show_blog) {
+                    self.close_article();
+                }
+            }, false);
+
+            // Browser back/forward button handling
+            window.addEventListener('popstate', function(e) {
+                if (self.show_blog && !window.location.search) {
+                    self.close_article();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    this.close_article()
+                }
+                
+                if (event.key === 'ArrowLeft') {
+                    this.close_article()
+                }
+            });
+
         },
 
         open_article(slug) {
