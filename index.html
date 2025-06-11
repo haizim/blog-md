@@ -135,8 +135,8 @@
         </div>
 
         <!-- Article Modal -->
-        <div id="article-modal" class="w-screen h-dvh bg-white top-0 fixed z-50" :style="'transition: all .75s ease-in-out; ' + (show_blog ? 'left: 0' : 'left: -100vw')">
-            <div class="overflow-y-scroll h-dvh">
+        <div class="w-screen h-dvh bg-white top-0 fixed z-50" :style="'transition: all .75s ease-in-out; ' + (show_blog ? 'left: 0' : 'left: -100vw')">
+            <div id="article-container" class="overflow-y-scroll h-dvh">
                 <div class="container mx-auto py-10 pb-14 px-4 max-w-3xl">
                     <div id="article-top"></div>
                     <div class="mb-8">
@@ -160,7 +160,7 @@
     
                 </div>
             </div>
-            <div class="p-4 text-center w-fit mx-auto border-x border-t border-gray-600 bg-white absolute bottom-0 left-0 right-0 rounded-t-lg" @click.prevent="close_article()" style="cursor: pointer;">
+            <div class="p-4 text-center w-fit mx-auto border-x border-t border-gray-600 bg-white absolute left-0 right-0 rounded-t-lg transition-all" @click.prevent="close_article()" style="cursor: pointer; margin-top: -4em;" id="back-button">
                 <a href="#" class="inline-flex items-center text-gray-600 hover:text-gray-900 text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />

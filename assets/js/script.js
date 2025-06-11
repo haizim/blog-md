@@ -1,10 +1,25 @@
 let blogs_raw = []
+let last_top = 0
+
 const converter = new showdown.Converter({
     tables: true,
     simpleLineBreaks: true,
     openLinksInNewWindow: true,
     omitExtraWLInCodeBlocks: true
 });
+
+document.getElementById('article-container').onscroll = (e) => {
+    let target = e.target
+    let scroll_position = target.scrollTop
+    
+    if ((scroll_position < last_top) || (scroll_position > (target.scrollTopMax - 50))) {
+        document.getElementById('back-button').style.setProperty('margin-top', '-4em')
+    } else {
+        document.getElementById('back-button').style.setProperty('margin-top', '1em')
+    }
+
+    last_top = scroll_position
+}
 
 function blog_view() {
     return {
@@ -109,7 +124,8 @@ function blog_view() {
                 this.show_blog = true
                 document.getElementById('article-top').scrollIntoView()
                 document.getElementById('article-title').focus()
-                document.getElementById('article-modal').focus()
+                document.getElementById('article-container').focus()
+                document.getElementById('back-button').style.setProperty('margin-top', '-4em')
             });
         },
 
