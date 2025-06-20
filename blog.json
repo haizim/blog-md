@@ -119,6 +119,20 @@
         "category": "Pemrograman"
     },
     {
+        "slug": "framework-wireframing",
+        "timestamp": "2024-05-30 12:58:33",
+        "title": "Framework Untuk Wireframing",
+        "excerpt": "Lelah dengan prose edit-edit desain wireframe, akhirnya terpikirkan untuk mencoba membuat framework wireframing sendiri :D",
+        "category": "Self Project"
+    },
+    {
+        "slug": "api-marketplace",
+        "timestamp": "2024-06-22 14:28:05",
+        "title": "Pros & Cons Open API Marketplace Tiktok Shop, Shopee & Lazada",
+        "excerpt": "Selama beberapa bulan terakhir ini saya mengerjakan proyek yang mengharuskan saya untuk menggunakan API dari beberapa marketplace. Fitur utama yang saya gunakan ialah Pengaturan Pesanan, Produk, Retur & Pengiriman. Tak lupa menggunakan webhook untuk mendapatkan update data terbaru dari marketpalce.",
+        "category": "Pemrograman"
+    },
+    {
         "slug": "google-idx-sendiri",
         "timestamp": "2024-07-20 14:08:33",
         "title": "Membuat Google IDX Sendiri",
