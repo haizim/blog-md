@@ -1,160 +1,160 @@
 [
     {
-        "slug": "mencari-kemarahan",
+        "id": "mencari-kemarahan",
         "timestamp": "2020-03-26 09:44:00",
         "title": "Mencari Kemarahan",
         "excerpt": "_\"aku tak lagi ingat kapan terkhir kali aku marah\"_",
         "category": "Fiksi"
     },
     {
-        "slug": "resistensi-batin",
+        "id": "resistensi-batin",
         "timestamp": "2020-03-28 12:25:28",
         "title": "Resistensi Batin",
         "excerpt": "Pagi itu aku tertarik menonton film yang ramai dibicarakan. Tapi saat hendak mencarinya lewat jalur tak resmi, ada rasa tak nyaman yang muncul. Ternyata, dua tahun hidup dengan software legal dan open source telah mengubah cara pandang dan nuraniku.",
         "category": "Opini"
     },
     {
-        "slug": "event-administration",
+        "id": "event-administration",
         "timestamp": "2020-05-06 14:51:12",
         "title": "Event Administration : Pendaftaran hingga Cetak E-sertifikat",
         "excerpt": "Kepanitiaan sudah menjadi _santapanku_ sejak SMA. Tentu registrasi menjadi satu hal tersendiri dalam suatu kepanitiaan.",
         "category": "Self Project"
     },
     {
-        "slug": "konten-legal",
+        "id": "konten-legal",
         "timestamp": "2020-05-11 21:34:12",
         "title": "Konten Legal dan yang Menyertainya",
         "excerpt": "Pagi itu obrolan soal tontonan seru bikin aku penasaran. Tapi saat tahu cuma tersedia di layanan berbayar, muncul dilema cukup lama: nonton bajakan atau tidak? Dulu aku sering begitu, tapi sejak migrasi ke software dan konten legal, aku belajar: selalu ada jalan yang benar, tinggal pilih.",
         "category": "Opini"
     },
     {
-        "slug": "gotongroyong-net",
+        "id": "gotongroyong-net",
         "timestamp": "2020-06-13 08:08:08",
         "title": "GotongRoyong-Net : RT/RW-Net Versi Low-Budget",
         "excerpt": "Saat SMA dahulu saya dan teman sekelas biasa membeli voucher IndieSch**l. Voucher ini tergolong murah jika dilihat dari apa yang kita dapat. Cukup merogoh seribu rupiah dan kita telah diberikan akses wifi tanpa batasan kuota selama 24 jam. Murah kan?",
         "category": "Self Project"
     },
     {
-        "slug": "perjuangan-virus-1",
+        "id": "perjuangan-virus-1",
         "timestamp": "2020-06-20 20:33:32",
         "title": "Perjuangan Hidup Seekor Virus Komputer(Bag. 1)",
         "excerpt": "",
         "category": "Fiksi"
     },
     {
-        "slug": "perjuangan-virus-2",
+        "id": "perjuangan-virus-2",
         "timestamp": "2020-06-28 09:46:23",
         "title": "Perjuangan Hidup Seekor Virus Komputer (Bag. 2)",
         "excerpt": "",
         "category": "Fiksi"
     },
     {
-        "slug": "impresi-love-affair",
+        "id": "impresi-love-affair",
         "timestamp": "2020-06-28 09:50:12",
         "title": "Impresi Permainan Piano Kim Kwang Min Membawakan Lagu Tema Love Affair pada Konser Dalam Ruangan Hang Out With Yoo Episode 35",
         "excerpt": "_Tak sebatas musik, ia juga dapat mengantarkan pada suatu perasaan_",
         "category": "Musik"
     },
     {
-        "slug": "perjuangan-virus-3",
+        "id": "perjuangan-virus-3",
         "timestamp": "2020-07-05 19:35:23",
         "title": "Perjuangan Hidup Seekor Virus Komputer (Bag. 3)",
         "excerpt": "",
         "category": "Fiksi"
     },
     {
-        "slug": "typo-indonesia",
+        "id": "typo-indonesia",
         "timestamp": "2020-07-22 13:09:12",
         "title": "Aplikasi Web Cek Typo Bahasa Indonesia",
         "excerpt": "Salah satu penyakitku yang sudah menahun sejak entah kapan ialah 'TYPO'. Iya, selain tulisan tangan yang gak bisa kebaca, sudah sejak lama banget typo ini tuh jadi masalah yang hampir gak pernah luput dari kehidupanku. Mulai dari nulis laporan dan tugas kuliah, tulisan di desain yang tak bikin, sampe sekarang pas lagi seneng programming juga masih kebawa aja nih penyakit. Heuuh",
         "category": "Self Project"
     },
     {
-        "slug": "perjuangan-virus-4",
+        "id": "perjuangan-virus-4",
         "timestamp": "2020-10-05 18:41:11",
         "title": "Perjuangan Hidup Seekor Virus Komputer (Bag. 4)",
         "excerpt": "",
         "category": "Fiksi"
     },
     {
-        "slug": "trending-omnibus",
+        "id": "trending-omnibus",
         "timestamp": "2020-10-09 19:37:01",
         "title": "Analisis Perebutan Trending Topic Dalam Pusaran Omnibus Law",
         "excerpt": "Trending topic twitter sering kali menjadi rebutan berbagai pihak dalam melambungkan opini agenda mereka. Termasuk pada isu Omnibus Law ini.",
         "category": "Analisis Data"
     },
     {
-        "slug": "diy-twitter-analytics",
+        "id": "diy-twitter-analytics",
         "timestamp": "2020-12-12 17:33:29",
         "title": "DIY Twitter Analytics ala Haizim",
         "excerpt": "Sejak beberapa waktu terakhir ini entah kenapa jadi suka memerhatikan kelakuan warga Twitter. Awalnya tuh tertarik sama yang namanya 'Trending Topic'. Yang membuat tertarik sama makhluk satu ini tuh karena saat itu saya berada di lingkungan yang suka dengan yang namanya propaganda.",
         "category": "Self Project"
     },
     {
-        "slug": "fanatisme-mamavote",
+        "id": "fanatisme-mamavote",
         "timestamp": "2020-12-19 12:55:24",
         "title": "Mengukur Fanatisme Fandom KPOP di Indonesia Melalui #MAMAVOTE",
         "excerpt": "Masih inget sama pergerakan penolakan OmnibusLaw beberapa waktu lalu? Inget gak kalau waktu itu salah satu garda terdepan dalam menyuarakan penolakan itu siapa? Iyap, benar sekali. Mereka ialah kalangan penggemar K-Pop di negeri ini.",
         "category": "Analisis Data"
     },
     {
-        "slug": "teknologi-netral",
+        "id": "teknologi-netral",
         "timestamp": "2021-04-17 06:49:27",
         "title": "Teknologi Kok NETRAL",
         "excerpt": "_Udah pernah dengerkan katanya ada suatu teknologi yang 'disalahgunakan'? Hmm.. yang bener..? Emangnya tujuan awal diciptakan teknologi tersebut tuh buat apa?_",
         "category": "Opini"
     },
     {
-        "slug": "sentry-php",
+        "id": "sentry-php",
         "timestamp": "2022-05-27 19:40:59",
         "title": "Sentry Performance Monitor Untuk PHP",
         "excerpt": "Performa aplikasi merupakan hal yang cukup penting pada sebuah aplikasi. Maka dari itu perlu ada tool untuk monitoring performanya.",
         "category": "Software Development"
     },
     {
-        "slug": "basis-bilangan-sendiri",
+        "id": "basis-bilangan-sendiri",
         "timestamp": "2023-12-09 12:02:11",
         "title": "Generate ID dengan Basis Bilangan Sendiri",
         "excerpt": "Berawal dari kebutuhan klien yang memiliki transaksi sekitar 100.000-an dalam sebulan. Namun, di sini klien meminta untuk ID yang digunakan hanya boleh sebanyak 6 digit. Padahal kalau untuk bilangan desimal dengan 6 digit maksimal hanya dapat menampung sampai 999.999. Maka, tak sampai satu tahun sudah akan kehabisan ID. Maka dari situ saya berpikir mencari cara untuk dapat memenuhi request dari klien ini.",
         "category": "Software Development"
     },
     {
-        "slug": "framework-wireframing",
+        "id": "framework-wireframing",
         "timestamp": "2024-05-30 12:58:33",
         "title": "Framework Untuk Wireframing",
         "excerpt": "Lelah dengan prose edit-edit desain wireframe, akhirnya terpikirkan untuk mencoba membuat framework wireframing sendiri :D",
         "category": "Self Project"
     },
     {
-        "slug": "api-marketplace",
+        "id": "api-marketplace",
         "timestamp": "2024-06-22 14:28:05",
         "title": "Pros & Cons Open API Marketplace Tiktok Shop, Shopee & Lazada",
         "excerpt": "Selama beberapa bulan terakhir ini saya mengerjakan proyek yang mengharuskan saya untuk menggunakan API dari beberapa marketplace. Fitur utama yang saya gunakan ialah Pengaturan Pesanan, Produk, Retur & Pengiriman. Tak lupa menggunakan webhook untuk mendapatkan update data terbaru dari marketpalce.",
         "category": "Software Development"
     },
     {
-        "slug": "google-idx-sendiri",
+        "id": "google-idx-sendiri",
         "timestamp": "2024-07-20 14:08:33",
         "title": "Membuat Google IDX Sendiri",
         "excerpt": "Beberapa waktu terakhir, saya tertarik dengan Google IDX, platform coding berbasis web dari Google. Namun, kekhawatiran soal privasi dan kurangnya pengguna aktif membuat saya ragu mencobanya. Hingga akhirnya saya menemukan alternatif self-hosted dari postingan di grup “Linux Indonesia” tentang code editor berbasis web yang sepenuhnya bisa saya kontrol.",
         "category": "Self Project"
     },
     {
-        "slug": "api-forward",
+        "id": "api-forward",
         "timestamp": "2025-01-18 12:58:15",
         "title": "API Forwarder",
         "excerpt": "Beberapa waktu lalu saya mendapat request untuk integrasi aplikasi dengan API Third-Party. Namun, dari penyedia Third-Party ini mengharuskan saya untuk mendaftarkan IP address saya untuk dimasukkan ke dalam whitelist mereka, di sini saya mendaftarkan IP dari server development & IP wifi saya. Tapi kan IP Wifi saya bisa berubah tiap beberapa hari",
         "category": "Self Project"
     },
     {
-        "slug": "perbandingan-ai-coding",
+        "id": "perbandingan-ai-coding",
         "timestamp": "2025-06-01 14:08:33",
         "title": "Perbandingan AI Coding Assistant",
         "excerpt": "Beberapa waktu terakhir, saya tertarik dengan Google IDX, platform coding berbasis web dari Google. Namun, kekhawatiran soal privasi dan kurangnya pengguna aktif membuat saya ragu mencobanya. Hingga akhirnya saya menemukan alternatif self-hosted dari postingan di grup “Linux Indonesia” tentang code editor berbasis web yang sepenuhnya bisa saya kontrol.",
         "category": "Software Development"
     },
     {
-        "slug": "modular-service",
+        "id": "modular-service",
         "timestamp": "2025-06-21 17:31:33",
         "title": "Modularisasi Service Aplikasi",
         "excerpt": "Seiring dengan meningkatnya data yang bergerak di aplikassi, naik pula beban pada server. Sehingga menurunkan performa aplikasi. Sudah dicoba menaikkan spesifikasi server, namun masih belum berasa. Akhirnya saya menyarankan solusi lain.",

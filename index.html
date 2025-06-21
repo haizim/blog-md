@@ -36,16 +36,16 @@
         <!-- Article List -->
         <div class="container mx-auto mt-8 px-2 max-w-3xl">
             <div class="space-y-12"> 
-                <template x-for="blog in blogs_show" :key="blog.slug">
+                <template x-for="blog in blogs_show" :key="blog.id">
                     <section class="group p-4">
                         <p class="text-sm text-gray-600 mb-1">
                             <span x-text="blog.category"></span> &bull; <span x-text="(new Date(blog.timestamp)).toDateString()"></span>
                         </p>
                         <h2 class="article-title text-3xl font-extrabold text-gray-900 mb-3 leading-tight">
-                            <a :href="`?slug=${blog.slug}`" class="transition duration-200" x-text="blog.title" @click.prevent="open_article(blog.slug)"></a>
+                            <a :href="`?id=${blog.id}`" class="transition duration-200" x-text="blog.title" @click.prevent="open_article(blog.id)"></a>
                         </h2>
                         <p class="text-lg text-gray-700 mb-4" x-html="converter.makeHtml(blog.excerpt)"></p>
-                        <a :href="`?slug=${blog.slug}`" class="text-lg" @click.prevent="open_article(blog.slug)">Baca Selengkapnya</a>
+                        <a :href="`?id=${blog.id}`" class="text-lg" @click.prevent="open_article(blog.id)">Baca Selengkapnya</a>
                     </section>
                 </template>
             </div>

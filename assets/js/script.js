@@ -36,7 +36,7 @@ function blog_view() {
         category_selected: "",
 
         init() {
-            fetch('/blog.json')
+            fetch('/blog.json?x=123')
             .then(response => response.json())
             .then(data => {
                 this.blogs = data
@@ -47,15 +47,15 @@ function blog_view() {
 
                 if (window.location.search) {
                     const urlParams = new URLSearchParams(window.location.search);
-                    const slug = urlParams.get('slug')
-                    this.open_article(slug)
+                    const id = urlParams.get('id')
+                    this.open_article(id)
                 }
             })
             .catch(error => {
                 console.error('Error:', error)
                 this.blogs = [
                     {
-                        "slug": "",
+                        "id": "",
                         "timestamp": (new Date).toISOString(),
                         "title": "Error mengambil data"
                     }
@@ -95,14 +95,14 @@ function blog_view() {
 
         },
 
-        open_article(slug) {
-            const article_new = this.blogs.find(b => b.slug === slug)
+        open_article(id) {
+            const article_new = this.blogs.find(b => b.id === id)
 
             this.article.title = article_new.title
             this.article.timestamp = article_new.timestamp
             this.article.category = article_new.category
 
-            fetch(`/article/${slug}.md`)
+            fetch(`/article/${id}.md`)
             .then(response => response.text())
             .then(data => {
                 const content_new = converter.makeHtml(data)
@@ -110,7 +110,7 @@ function blog_view() {
                 document.title = this.article.title
 
                 // set url
-                history.pushState(null, null, `?slug=${slug}`);
+                history.pushState(null, null, `?id=${id}`);
             })
             .catch(error => {
                 console.error('Error:', error)
