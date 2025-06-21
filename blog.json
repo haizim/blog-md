@@ -109,14 +109,14 @@
         "timestamp": "2022-05-27 19:40:59",
         "title": "Sentry Performance Monitor Untuk PHP",
         "excerpt": "Performa aplikasi merupakan hal yang cukup penting pada sebuah aplikasi. Maka dari itu perlu ada tool untuk monitoring performanya.",
-        "category": "Pemrograman"
+        "category": "Software Development"
     },
     {
         "slug": "basis-bilangan-sendiri",
         "timestamp": "2023-12-09 12:02:11",
         "title": "Generate ID dengan Basis Bilangan Sendiri",
         "excerpt": "Berawal dari kebutuhan klien yang memiliki transaksi sekitar 100.000-an dalam sebulan. Namun, di sini klien meminta untuk ID yang digunakan hanya boleh sebanyak 6 digit. Padahal kalau untuk bilangan desimal dengan 6 digit maksimal hanya dapat menampung sampai 999.999. Maka, tak sampai satu tahun sudah akan kehabisan ID. Maka dari situ saya berpikir mencari cara untuk dapat memenuhi request dari klien ini.",
-        "category": "Pemrograman"
+        "category": "Software Development"
     },
     {
         "slug": "framework-wireframing",
@@ -130,7 +130,7 @@
         "timestamp": "2024-06-22 14:28:05",
         "title": "Pros & Cons Open API Marketplace Tiktok Shop, Shopee & Lazada",
         "excerpt": "Selama beberapa bulan terakhir ini saya mengerjakan proyek yang mengharuskan saya untuk menggunakan API dari beberapa marketplace. Fitur utama yang saya gunakan ialah Pengaturan Pesanan, Produk, Retur & Pengiriman. Tak lupa menggunakan webhook untuk mendapatkan update data terbaru dari marketpalce.",
-        "category": "Pemrograman"
+        "category": "Software Development"
     },
     {
         "slug": "google-idx-sendiri",
@@ -151,6 +151,13 @@
         "timestamp": "2025-06-01 14:08:33",
         "title": "Perbandingan AI Coding Assistant",
         "excerpt": "Beberapa waktu terakhir, saya tertarik dengan Google IDX, platform coding berbasis web dari Google. Namun, kekhawatiran soal privasi dan kurangnya pengguna aktif membuat saya ragu mencobanya. Hingga akhirnya saya menemukan alternatif self-hosted dari postingan di grup “Linux Indonesia” tentang code editor berbasis web yang sepenuhnya bisa saya kontrol.",
-        "category": "Pemrograman"
+        "category": "Software Development"
+    },
+    {
+        "slug": "modular-service",
+        "timestamp": "2025-06-21 17:31:33",
+        "title": "Modularisasi Service Aplikasi",
+        "excerpt": "Seiring dengan meningkatnya data yang bergerak di aplikassi, naik pula beban pada server. Sehingga menurunkan performa aplikasi. Sudah dicoba menaikkan spesifikasi server, namun masih belum berasa. Akhirnya saya menyarankan solusi lain.",
+        "category": "Software Development"
     }
 ]
