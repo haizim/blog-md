@@ -140,6 +140,13 @@
         "category": "Self Project"
     },
     {
+        "slug": "api-forward",
+        "timestamp": "2025-01-18 12:58:15",
+        "title": "API Forwarder",
+        "excerpt": "Beberapa waktu lalu saya mendapat request untuk integrasi aplikasi dengan API Third-Party. Namun, dari penyedia Third-Party ini mengharuskan saya untuk mendaftarkan IP address saya untuk dimasukkan ke dalam whitelist mereka, di sini saya mendaftarkan IP dari server development & IP wifi saya. Tapi kan IP Wifi saya bisa berubah tiap beberapa hari",
+        "category": "Self Project"
+    },
+    {
         "slug": "perbandingan-ai-coding",
         "timestamp": "2025-06-01 14:08:33",
         "title": "Perbandingan AI Coding Assistant",
