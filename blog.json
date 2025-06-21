@@ -150,7 +150,7 @@
         "id": "perbandingan-ai-coding",
         "timestamp": "2025-06-01 14:08:33",
         "title": "Perbandingan AI Coding Assistant",
-        "excerpt": "Beberapa waktu terakhir, saya tertarik dengan Google IDX, platform coding berbasis web dari Google. Namun, kekhawatiran soal privasi dan kurangnya pengguna aktif membuat saya ragu mencobanya. Hingga akhirnya saya menemukan alternatif self-hosted dari postingan di grup “Linux Indonesia” tentang code editor berbasis web yang sepenuhnya bisa saya kontrol.",
+        "excerpt": "Meskipun terlambat, akhirnya saya mencoba mengadopsi penggunaan AI pada proses coding saya. Dari beberapa penggunaan AI coding assistant, saya memilih 3 yang paling cocok untuk digunakan ChatGPT, Gemini & Claude. Karena saya juga sedang tertarik untuk mempelajari AlpineJS, sekalian saja saya mencoba menggunakan usecase ini untuk menguji masing-masing AI.",
         "category": "Software Development"
     },
     {
