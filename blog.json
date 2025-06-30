@@ -32,7 +32,7 @@
         "timestamp": "2020-06-13 08:08:08",
         "title": "GotongRoyong-Net : RT/RW-Net Versi Low-Budget",
         "excerpt": "Saat SMA dahulu saya dan teman sekelas biasa membeli voucher IndieSch**l. Voucher ini tergolong murah jika dilihat dari apa yang kita dapat. Cukup merogoh seribu rupiah dan kita telah diberikan akses wifi tanpa batasan kuota selama 24 jam. Murah kan?",
-        "category": "Self Project"
+        "category": "Opini"
     },
     {
         "id": "perjuangan-virus-1",
@@ -157,7 +157,14 @@
         "id": "modular-service",
         "timestamp": "2025-06-21 17:31:33",
         "title": "Modularisasi Service Aplikasi",
-        "excerpt": "Seiring dengan meningkatnya data yang bergerak di aplikassi, naik pula beban pada server. Sehingga menurunkan performa aplikasi. Sudah dicoba menaikkan spesifikasi server, namun masih belum berasa. Akhirnya saya menyarankan solusi lain.",
+        "excerpt": "Seiring dengan meningkatnya data yang bergerak di aplikasi, naik pula beban pada server. Sehingga menurunkan performa aplikasi. Sudah dicoba menaikkan spesifikasi server, namun masih belum berasa. Akhirnya saya menyarankan solusi lain.",
+        "category": "Software Development"
+    },
+    {
+        "id": "batching-request",
+        "timestamp": "2025-06-30 13:28:05",
+        "title": "Batching Request Dari Webhook",
+        "excerpt": "Saga masalah di _omnichannel_ ternyata belum berakhir. Sekarang masalahnya ada pada kuota _request_ yang habis. Akhirnya saya menggunakan fitur dari **Cloudflare** untuk menanganinya.",
         "category": "Software Development"
     }
 ]
