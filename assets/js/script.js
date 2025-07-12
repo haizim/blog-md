@@ -5,7 +5,8 @@ const converter = new showdown.Converter({
     tables: true,
     simpleLineBreaks: true,
     openLinksInNewWindow: true,
-    omitExtraWLInCodeBlocks: true
+    omitExtraWLInCodeBlocks: true,
+    sanitize: true
 });
 
 document.getElementById('article-container').onscroll = (e) => {
