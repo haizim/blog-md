@@ -166,5 +166,12 @@
         "title": "Batching Request Dari Webhook",
         "excerpt": "Saga masalah di _omnichannel_ ternyata belum berakhir. Sekarang masalahnya ada pada kuota _request_ yang habis. Akhirnya saya menggunakan fitur dari **Cloudflare** untuk menanganinya.",
         "category": "Software Development"
+    },
+    {
+        "id": "pengalaman-integrasi-llm",
+        "timestamp": "2025-07-12 12:28:05",
+        "title": "Pengalaman Saya Integrasi LLM",
+        "excerpt": "Di lini masa berbagai social media saya akhir-akhir ini dipenuhi dengan topik terkait AI. Mulai dari pengguna umum yang bukan di bidang IT hingga developer yang sudah mencoba untuk men-utilize AI ini. Akhirnya saya tertarik untuk mencoba integrasi AI pada aplikasi saya sendiri.",
+        "category": "Software Development"
     }
 ]
