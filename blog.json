@@ -173,5 +173,12 @@
         "title": "Pengalaman Saya Integrasi LLM",
         "excerpt": "Di lini masa berbagai social media saya akhir-akhir ini dipenuhi dengan topik terkait AI. Mulai dari pengguna umum yang bukan di bidang IT hingga developer yang sudah mencoba untuk men-utilize AI ini. Akhirnya saya tertarik untuk mencoba integrasi AI pada aplikasi saya sendiri.",
         "category": "Software Development"
+    },
+    {
+        "id": "blog-md",
+        "timestamp": "2025-08-02 13:08:05",
+        "title": "Blog Markdown",
+        "excerpt": "Ingin tahu apa saja yang menyusun web ini? Cek di sini. Btw, Saya tidak menggunakan pemrosesan backend apapun & stack yang saya gunakan tidak biasa loh. Hehe",
+        "category": "Self Project"
     }
 ]
