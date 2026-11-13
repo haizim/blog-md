@@ -21,12 +21,12 @@
     <main x-data="blog_view()">
         <!-- Category Filter -->
         <div class="container mx-auto mt-8 px-2 max-w-3xl">
-            <div class="flex flex-wrap items-center mb-4 space-x-4">
-                <a href="#" class="`inline-flex items-center text-gray-600 hover:text-gray-900 text-lg ${category_selected == '' ? 'font-bold' : ''}`" @click.prevent="filter_blog('')">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <a href="#" :class="`inline-flex items-center px-4 py-1.5 rounded-full border text-sm font-medium transition-colors ${category_selected === '' ? 'bg-gray-800 border-gray-800 text-white' : 'bg-white border-gray-300 text-gray-600 hover:border-gray-500 hover:text-gray-900'}`" @click.prevent="filter_blog('')">
                     <span>Semua</span>
                 </a>
                 <template x-for="category in categories" :key="category">
-                    <a href="#" :class="`inline-flex items-center text-gray-600 hover:text-gray-900 text-lg ${category === category_selected ? 'font-bold' : ''}`" @click.prevent="filter_blog(category)">
+                    <a href="#" :class="`inline-flex items-center px-4 py-1.5 rounded-full border text-sm font-medium transition-colors ${category === category_selected ? 'bg-gray-800 border-gray-800 text-white' : 'bg-white border-gray-300 text-gray-600 hover:border-gray-500 hover:text-gray-900'}`" @click.prevent="filter_blog(category)">
                         <span x-text="category"></span>
                     </a>
                 </template>
