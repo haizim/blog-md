@@ -180,5 +180,12 @@
         "title": "Blog Markdown",
         "excerpt": "Ingin tahu apa saja yang menyusun web ini? Cek di sini. Btw, Saya tidak menggunakan pemrosesan backend apapun & stack yang saya gunakan tidak biasa loh. Hehe",
         "category": "Self Project"
+    },
+    {
+        "id": "semua-ikan-di-langit",
+        "timestamp": "2026-11-02 13:08:05",
+        "title": "Bagaimana Seorang Hamba Mencinta : Impresi Novel Semua Ikan di Langit",
+        "excerpt": "Kamu bisa 'meminjam perasaan' yang kamu rasakan saat membaca buku ini untuk memahami bagaimana seorang hamba mencinta Illah",
+        "category": "Buku"
     }
 ]
