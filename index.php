@@ -1,9 +1,55 @@
+<?php
+$site_name   = "Haizim's Blog";
+$title       = $site_name;
+$description = "Blog pribadi Haizim";
+$type        = 'website';
+
+$scheme   = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$base_url = $scheme . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost');
+$url      = $base_url . '/';
+
+$id = isset($_GET['id']) ? (string) $_GET['id'] : '';
+if ($id !== '') {
+    $blogs = json_decode(@file_get_contents(__DIR__ . '/blog.json'), true) ?: [];
+    foreach ($blogs as $blog) {
+        if (($blog['id'] ?? '') === $id) {
+            $title = $blog['title'];
+            // buang sintaks markdown sederhana dari excerpt
+            $description = trim(preg_replace(
+                ['/!\[[^\]]*\]\([^)]*\)/', '/\[([^\]]*)\]\([^)]*\)/', '/[*_`~#>]+/', '/\s+/'],
+                ['', '$1', '', ' '],
+                $blog['excerpt'] ?? ''
+            ));
+            $type = 'article';
+            $url  = $base_url . '/?id=' . rawurlencode($id);
+            break;
+        }
+    }
+}
+
+$e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haizim's Blog</title>
+    <title><?= $e($title) ?></title>
+    <meta name="description" content="<?= $e($description) ?>">
+    <link rel="canonical" href="<?= $e($url) ?>">
+
+    <!-- Open Graph (WhatsApp, Telegram, Facebook, dll) -->
+    <meta property="og:site_name" content="<?= $e($site_name) ?>">
+    <meta property="og:type" content="<?= $e($type) ?>">
+    <meta property="og:title" content="<?= $e($title) ?>">
+    <meta property="og:description" content="<?= $e($description) ?>">
+    <meta property="og:url" content="<?= $e($url) ?>">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<?= $e($title) ?>">
+    <meta name="twitter:description" content="<?= $e($description) ?>">
     <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/js/tailwind.min.js"></script>
     <script src="/assets/js/showdown.min.js"></script>
